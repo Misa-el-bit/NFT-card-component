@@ -1,0 +1,140 @@
+/*
+# Front-end Style Guide
+
+## Layout
+- Mobile: 375px
+- Desktop: 1440px
+
+## Colors
+
+### Primary
+
+- Soft blue: hsl(215, 51%, 70%)
+- Cyan: hsl(178, 100%, 50%)
+
+### Neutral
+
+- Very dark blue (main BG): hsl(217, 54%, 11%)
+- Very dark blue (card BG): hsl(216, 50%, 16%)
+- Very dark blue (line): hsl(215, 32%, 27%)
+- White: hsl(0, 0%, 100%)
+
+- Font size (paragraph): 18px
+
+### Font
+
+- Family: [Outfit](https://fonts.google.com/specimen/Outfit)
+- Weights: 300, 400, 600
+*/
+
+//Colors
+$Soft-blue: hsl(215, 51%, 70%);
+$Cyan: hsl(178, 100%, 50%);
+$Vdark-blue-main-BG: hsl(217, 54%, 11%);
+$Vdark-blue-card-BG: hsl(216, 50%, 16%);
+$Vdark-blue-line : hsl(215, 32%, 27%);
+$White: hsl(0, 0%, 100%);
+
+//reset
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Outfit', sans-serif;
+    font-size: 18px;
+    margin: 4rem auto;
+}
+.card{
+    width: 18rem;
+    background-color: $Vdark-blue-card-BG;
+    border: 1px solid $Vdark-blue-line;
+    .img-container{
+        .card-img{
+            width: 89%;
+            margin: 1rem 1rem 0 1rem;
+            border-radius: 10px;
+        }
+        .view{
+            position: absolute;
+            top: 1rem;
+            left: 1rem;
+            height: 47%;
+            width: 89%;
+            opacity: 0;
+            transition: .5s ease;
+            background-color: $Cyan;
+            border-radius: 10px;
+            .icon{
+                position: absolute;
+                top: 40%;
+                left: 41%;
+            }
+        }
+        &:hover .view{
+            opacity: 0.4;
+            cursor: pointer;
+        }
+    }
+    .card-body{
+        .card-title{
+            color: $White;
+            font-weight: 600;
+            &:hover{
+                color: $Cyan;
+                cursor: pointer;
+            }
+        }
+        .card-text{
+            color: $Soft-blue;
+            font-weight: 400;
+        }
+    }
+    .card-stadistics{
+        justify-content: space-around;
+        margin-bottom: 1rem;
+        p{
+            margin: 0;
+            &.eth{
+                color: $Cyan;
+                font-weight: 400;
+            }
+            &.days{
+                color: $Soft-blue;
+                font-weight: 300;
+            }
+            img{
+                margin-bottom: 0.3rem;
+                margin-right: 0.5rem;
+            }
+        }
+    }
+    hr{
+        background-color: $Soft-blue;
+        width: 90%;
+        align-self: center;
+    }
+    .creator{
+        align-items: center;
+        padding: 1rem;
+        img{
+            width: 2rem;
+            margin-right: .5rem;
+            border-radius: 100%;
+            border: 1px solid $Soft-blue;
+        }
+        p{
+            margin: 0;
+            color: $Soft-blue;
+            font-weight: 300;
+            a{
+                color: $White;
+                &:hover{
+                    color: $Cyan;
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+}

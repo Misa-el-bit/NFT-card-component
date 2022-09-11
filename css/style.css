@@ -1,0 +1,128 @@
+/*
+# Front-end Style Guide
+
+## Layout
+- Mobile: 375px
+- Desktop: 1440px
+
+## Colors
+
+### Primary
+
+- Soft blue: hsl(215, 51%, 70%)
+- Cyan: hsl(178, 100%, 50%)
+
+### Neutral
+
+- Very dark blue (main BG): hsl(217, 54%, 11%)
+- Very dark blue (card BG): hsl(216, 50%, 16%)
+- Very dark blue (line): hsl(215, 32%, 27%)
+- White: hsl(0, 0%, 100%)
+
+- Font size (paragraph): 18px
+
+### Font
+
+- Family: [Outfit](https://fonts.google.com/specimen/Outfit)
+- Weights: 300, 400, 600
+*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Outfit", sans-serif;
+  font-size: 18px;
+  margin: 4rem auto;
+}
+
+.card {
+  width: 18rem;
+  background-color: hsl(216deg, 50%, 16%);
+  border: 1px solid hsl(215deg, 32%, 27%);
+}
+.card .img-container .card-img {
+  width: 89%;
+  margin: 1rem 1rem 0 1rem;
+  border-radius: 10px;
+}
+.card .img-container .view {
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+  height: 47%;
+  width: 89%;
+  opacity: 0;
+  transition: 0.5s ease;
+  background-color: hsl(178deg, 100%, 50%);
+  border-radius: 10px;
+}
+.card .img-container .view .icon {
+  position: absolute;
+  top: 40%;
+  left: 41%;
+}
+.card .img-container:hover .view {
+  opacity: 0.4;
+  cursor: pointer;
+}
+.card .card-body .card-title {
+  color: hsl(0deg, 0%, 100%);
+  font-weight: 600;
+}
+.card .card-body .card-title:hover {
+  color: hsl(178deg, 100%, 50%);
+  cursor: pointer;
+}
+.card .card-body .card-text {
+  color: hsl(215deg, 51%, 70%);
+  font-weight: 400;
+}
+.card .card-stadistics {
+  justify-content: space-around;
+  margin-bottom: 1rem;
+}
+.card .card-stadistics p {
+  margin: 0;
+}
+.card .card-stadistics p.eth {
+  color: hsl(178deg, 100%, 50%);
+  font-weight: 400;
+}
+.card .card-stadistics p.days {
+  color: hsl(215deg, 51%, 70%);
+  font-weight: 300;
+}
+.card .card-stadistics p img {
+  margin-bottom: 0.3rem;
+  margin-right: 0.5rem;
+}
+.card hr {
+  background-color: hsl(215deg, 51%, 70%);
+  width: 90%;
+  align-self: center;
+}
+.card .creator {
+  align-items: center;
+  padding: 1rem;
+}
+.card .creator img {
+  width: 2rem;
+  margin-right: 0.5rem;
+  border-radius: 100%;
+  border: 1px solid hsl(215deg, 51%, 70%);
+}
+.card .creator p {
+  margin: 0;
+  color: hsl(215deg, 51%, 70%);
+  font-weight: 300;
+}
+.card .creator p a {
+  color: hsl(0deg, 0%, 100%);
+}
+.card .creator p a:hover {
+  color: hsl(178deg, 100%, 50%);
+  text-decoration: none;
+}/*# sourceMappingURL=style.css.map */
