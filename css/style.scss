@@ -1,32 +1,3 @@
-/*
-# Front-end Style Guide
-
-## Layout
-- Mobile: 375px
-- Desktop: 1440px
-
-## Colors
-
-### Primary
-
-- Soft blue: hsl(215, 51%, 70%)
-- Cyan: hsl(178, 100%, 50%)
-
-### Neutral
-
-- Very dark blue (main BG): hsl(217, 54%, 11%)
-- Very dark blue (card BG): hsl(216, 50%, 16%)
-- Very dark blue (line): hsl(215, 32%, 27%)
-- White: hsl(0, 0%, 100%)
-
-- Font size (paragraph): 18px
-
-### Font
-
-- Family: [Outfit](https://fonts.google.com/specimen/Outfit)
-- Weights: 300, 400, 600
-*/
-
 //Colors
 $Soft-blue: hsl(215, 51%, 70%);
 $Cyan: hsl(178, 100%, 50%);
@@ -45,11 +16,12 @@ body{
     font-family: 'Outfit', sans-serif;
     font-size: 18px;
     margin: 4rem auto;
+    background-color: $Vdark-blue-main-BG;
 }
 .card{
     width: 18rem;
     background-color: $Vdark-blue-card-BG;
-    border: 1px solid $Vdark-blue-line;
+    border: 1px solid $Vdark-blue-card-BG;
     .img-container{
         .card-img{
             width: 89%;
