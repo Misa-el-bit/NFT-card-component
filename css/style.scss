@@ -15,8 +15,10 @@ $White: hsl(0, 0%, 100%);
 body{
     font-family: 'Outfit', sans-serif;
     font-size: 18px;
-    margin: 4rem auto;
     background-color: $Vdark-blue-main-BG;
+    display: flex;
+    align-items: center;
+    height: 100vh;
 }
 .card{
     width: 18rem;

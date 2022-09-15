@@ -7,8 +7,10 @@
 body {
   font-family: "Outfit", sans-serif;
   font-size: 18px;
-  margin: 4rem auto;
   background-color: hsl(217deg, 54%, 11%);
+  display: flex;
+  align-items: center;
+  height: 100vh;
 }
 
 .card {
